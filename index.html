@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <title>FlightTicketsT&T</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+	
+	
+	
+	<link rel="stylesheet" href="assets/css/2styles.min.css">
+    <link rel="stylesheet" href="assets/css/2flight.min.css">
+    <link rel="stylesheet" href="assets/css/2bootstrap.min.css">
+	
+	<script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="assets/js/khungtimve.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+
+  
+
+</head>
+<body >
+       <!-- NAV SECTION -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#" >
+                  <img width="240" src="assets/img/logo.png" alt="Tim ve may bay pro">
+                  </a>
+               </div>
+               <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                     <li>
+                        <img class="img-hl" src="assets/img/hotline.jpg">
+                     </li>
+                     <li>
+                        <a href="#">
+                        Hướng dẫn đặt vé
+                        </a>
+                     </li>
+                     <li>
+                        <a  href="#">
+                        Đăng ký
+                        </a>
+                     </li>
+                     <li>
+                        <a  href="#">
+                        Đăng nhập
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+     <!--END NAV SECTION -->
+    
+    <!--HOME SECTION-->
+    <div id="home-sec">
+
+   
+    <div class="" id="home" >
+       
+ <div class="" style="">
+         <div class=" flight">
+            <div class="container">
+               <div class="fix-hf">
+                  
+                  <div class="search-box flight">
+                     <div class="search-box-content">
+                        <form action="#" method="post" >
+                           <div class="block-dk-sr" id="block-flight">
+								<div>
+									<center><h2 id="home-page-title" style="color:green"><img src="assets/img/Search-48.png"> <b>Tìm vé máy bay</b></h2></center>
+								</div>
+                              <div class="clear"></div>
+                              <!--ChonSanBay-->		
+                              <div class="airports" id="airport-select" active="">
+                                 <div class="row-search">
+                                    <div class="col-left"><span class="departure" for="DepartureAirport">Sân bay đi</span></div>
+                                    <div class="col-right"><input class="Airport" id="DepartureAirport" name="DepartureAirport" placeholder="Điểm đi" readonly="readonly" type="text" value="Hà Nội (HAN)"></div>
+                                 </div>
+                                 <div class="row-search">
+                                    <div class="col-left"><span class="arrival" for="ArrivalAirport">Sân bay đến</span></div>
+                                    <div class="col-right"><input class="Airport" id="ArrivalAirport" name="ArrivalAirport" placeholder="Điểm đến" readonly="readonly" type="text" value="Hồ Chí Minh (SGN)"></div>
+                                 </div>
+                              </div>
+                              <!--End ChonSanBay-->		
+                              <div class="clear"></div>
+                              <!--ChonNgay-->
+                              <div class="date">
+                                 <div class="row-search">
+                                    <div class="pull-left w35"><span for="DepartureDate">Ngày đi</span></div>
+                                    <div class="pull-left w65"><input data-val="true" data-val-date="The field DepartureDate must be a date." id="DepartureDate" name="DepartureDate" placeholder="Ngày đi" readonly="readonly" type="text" value="28/03/2017 12:00:00 SA" class="hasDatepicker input-validation-error"></div>
+                                 </div>
+                                 <div class="row-search" id="return-date" style="">
+                                    <div class="pull-left w35">
+                                       <span for="ReturnDate">Ngày về</span>
+                                    </div>
+                                    <div class="pull-left w65">
+                                       <input data-val="true" data-val-date="The field ReturnDate must be a date." id="ReturnDate" name="ReturnDate" placeholder="Ngày về" readonly="readonly" type="text" value="31/03/2017 12:00:00 SA" class="hasDatepicker input-validation-error">                 
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--End ChonNgay-->		
+                              <!--ChonSoLuong-->
+                              <div class="clearfix"></div>
+                              <div class="quantity">
+                                 <div class="adult">
+                                    <label for="Adult">Người lớn <i>(&gt;12 tuổi)</i></label>
+                                    <select data-val="true" data-val-number="The field Adult must be a number." id="Adult" name="Adult">
+                                       <option selected="selected" value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+                                       <option value="6">6</option>
+                                       <option value="7">7</option>
+                                       <option value="8">8</option>
+                                       <option value="9">9</option>
+                                    </select>
+                                 </div>
+                                 <div class="child">
+                                    <label for="Child">Trẻ em <i>(2 - 12 tuổi)</i></label>
+                                    <select data-val="true" data-val-number="The field Child must be a number." id="Child" name="Child">
+                                       <option selected="selected" value="0">0</option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+									   <option value="1">6</option>
+                                       <option value="2">7</option>
+                                       <option value="3">8</option>
+                                       <option value="4">9</option>
+									   
+                                    </select>
+                                 </div>
+                                 <div class="infant">
+                                    <label for="Infant">Em bé <i>(&lt; 2 tuổi)</i></label>
+                                    <select data-val="true" data-val-number="The field Infant must be a number." id="Infant" name="Infant">
+                                       <option selected="selected" value="0">0</option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+									   <option value="1">6</option>
+                                       <option value="2">7</option>
+                                       <option value="3">8</option>
+                                       <option value="4">9</option>
+                                    </select>
+                                 </div>
+								
+                              </div>
+                              <!--End ChonSoLuong-->
+							
+							
+							  
+                              <div class="clearfix"></div>
+							  <br>
+							  <div>
+							 <center>
+                                 <input type="submit" class="btn btn-success btn-lg" value="Tìm vé">
+							  </center>
+							  </div>
+                           </div>
+						    </form>
+                     </div>
+                    
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+        
+    </div>
+         </div>
+    
+    <!--END HOME SECTION-->
+    <!--SERVICES SECTION-->    
+    <section  id="services-sec" >
+        <div class="container">
+            
+            <div class="row ">
+                <div class="col-md-12">
+                      <div class="col-md-8 col-sm-8">
+                          <h2>Lorem ipsum dolor sit amet </h2>
+                    <p>
+Lorem ipsum dolor sit amet, accumsan.  posuere lectus et, fringilla augue.
+                        Lorem ipsum dolor sit amet, accumsan.  posuere lectus et, fringilla augue.
+                          Lorem ipsum dolor sit amet, accumsan.  posuere lectus et, fringilla augue.
+                          Lorem ipsum dolor sit amet, accumsan.  posuere lectus et, fringilla augue.
+                          Lorem ipsum dolor sit amet, accumsan.  posuere lectus et, fringilla augue.
+                    </p>
+                    </div>
+                  
+                    <div class="col-md-4 col-sm-4">
+                    <h2>Lorem ipsum  </h2>
+                    <p>
+Lorem ipsum dolor sit amet, accumsan.  posuere lectus et, fringilla augue.
+                        Lorem ipsum dolor sit amet, accumsan.  posuere lectus et, fringilla augue.
+                    </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row text-center">
+            <div class="col-md-4  col-sm-4">
+                 <i class="fa fa-fax faa-horizontal animated icon-round bk-color-black"></i>
+                            <h4>Sure Quique Menu </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                           
+                </div>
+             <div class="col-md-4  col-sm-4">
+                 <i class="fa fa-bomb  faa-pulse animated icon-round bk-color-blue"></i>
+                            <h4>Sure Quique Menu </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                           
+                </div>
+            <div class="col-md-4  col-sm-4">
+                  <i class="fa fa-paw  faa-bounce animated icon-round bk-color-brown"></i>
+                            <h4>Sure Quique Menu </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                           
+                </div>
+            </div>
+            <div class="row pad-top">
+                <div class="col-md-12 text-center">
+                      <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Service # 1
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                        </div>
+                        <div class="panel-footer">
+                            Panel Footer
+                        </div>
+                    </div>
+                    </div>
+                  <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            Service # 2
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                        </div>
+                        <div class="panel-footer">
+                            Panel Footer
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            Service # 3
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                        </div>
+                        <div class="panel-footer">
+                            Panel Footer
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--END SERVICES SECTION-->
+     <!--STATS SECTION-->
+    <section class="c-sts" id="sts-img">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-9 ">
+                    <div class="stats-div">
+                        <h3>Flight Ticket T&T</h3>
+                         <h4>An toàn, chất lượng, phục vụ chu đáo ...</h4>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <div class="stats-div">
+                        <h3>100+</h3>
+                        <h4>Hơn 100 đại lý đã tin dùng</h4>
+                    </div>
+
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+    <!--END STATS SECTION-->
+     <!--PRICE SECTION-->
+    <section id="price-sec">
+        <div class="container">
+            <div class="row ">
+                                 <div class="col-md-12 text-center ">
+                    <div class="col-md-4 col-sm-4">
+                        <ul class="plan">
+                            <li class="plan-head btn-danger">BASIC PLAN</li>
+                           
+                            <li><strong>12</strong> Accounts</li>
+                            <li><strong>52</strong> Emails</li>
+                            <li><strong>50 GB</strong> Space</li>
+                            <li><strong>Free</strong> Support</li>
+                             <li class="main-price">$99 only</li>
+                            <li class="bottom">
+                                <a href="#" class="btn btn-danger btn-lg ">Read More</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4  col-sm-4">
+                        <ul class="plan">
+                            <li class="plan-head btn-primary">POPULAR PLAN</li>
+                            
+                            <li><strong>12</strong> Accounts</li>
+                            <li><strong>52</strong> Emails</li>
+                            <li><strong>50 GB</strong> Space</li>
+                            <li><strong>Free</strong> Support</li>
+                            <li class="main-price">$199 only</li>
+                            <li class="bottom">
+                                <a href="#" class="btn btn-primary btn-lg ">Read More</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4  col-sm-4">
+                        <ul class="plan">
+                            <li class="plan-head btn-success">VALUE PLAN</li>
+                         
+                            <li><strong>12</strong> Accounts</li>
+                            <li><strong>52</strong> Emails</li>
+                            <li><strong>50 GB</strong> Space</li>
+                            <li><strong>Free</strong> Support</li>
+                               <li class="main-price">$299 only</li>
+                            <li class="bottom">
+                                <a href="#" class="btn btn-success btn-lg">Read More</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- END PRICE SECTION-->
+	
+	<div id="airport-list" class="arplist ui-dialog-content ui-widget-content" style="">
+         <div class="listCity" active="">
+            <div class="domestic-col">
+               <ul style="margin-bottom: 20px">
+                  <li class="title">Miền Bắc</li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Hà Nội</b> (HAN)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Hải Phòng</b> (HPH)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Điện Biên</b> (DIN)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Thanh Hóa</b> (THD)</a></li>
+               </ul>
+               <ul>
+                  <li class="title">Miền Trung</li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Vinh</b> (VII)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Huế</b> (HUI)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Đồng Hới</b> (VDH)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Đà Nẵng</b> (DAD)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Pleiku</b> (PXU)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Tuy Hòa</b> (TBB)</a></li>
+               </ul>
+            </div>
+            <div class="domestic-col">
+               <ul>
+                  <li class="title">Miền Nam</li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Hồ Chí Minh</b> (SGN)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Nha Trang</b> (CXR)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Đà Lạt</b> (DLI)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Phú Quốc</b> (PQC)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Tam Kỳ</b> (VCL)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Quy Nhơn</b> (UIH)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Cần Thơ</b> (VCA)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Côn Đảo</b> (VCS)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Ban Mê Thuột</b> (BMV)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Rạch Giá</b> (VKG)</a></li>
+                  <li><a href="javascript:;" rel="nofollow"><b>Cà Mau</b> (CAH)</a></li>
+               </ul>
+            </div>
+            <div class="internation-city">
+               <h3 class="title">Quốc Tế</h3>
+               <p>Vui lòng nhập tên thành phố, mã sân bay</p>
+               <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="airport-autocomplete" class="txtFlightCity ui-autocomplete-input" autocomplete="off">
+               <p>Ví dụ: Ho Chi Minh, SGN, Kualalumpur, KUL</p>
+            </div>
+         </div>
+      </div>
+   
+
+   
+
+   
+
+    <!--FOOTER SECTION -->
+    <div id="footer">
+        Đặt vé máy bay pro 2017 | All Right Reserved    
+    </div>
+    <!-- END FOOTER SECTION -->
+
+
+  
+
+</body>
+</html>
